@@ -1,4 +1,3 @@
-# Copilot Instructions for Bookstore Demo
 
 ## Project Architecture
 - **Monorepo structure**: Contains `backend/` (PHP API, SQL, Apache config), `frontend/` (static HTML, JS, CSS, Nginx config), and `scripts/` (Python utilities).
