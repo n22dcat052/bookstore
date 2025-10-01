@@ -1,0 +1,215 @@
+/* Books Page Styles */
+
+/* Books Header */
+.books-header {
+    padding: 40px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.breadcrumb a {
+    color: var(--text-color);
+}
+
+.breadcrumb span {
+    color: var(--primary-color);
+}
+
+.page-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--heading-color);
+}
+
+.books-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.showing-results {
+    color: var(--text-color);
+}
+
+.sorting-select {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    min-width: 200px;
+}
+
+/* Books Grid */
+.books-grid {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+}
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Book Item */
+.book-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 420px;
+    justify-content: flex-start;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-image {
+    position: relative;
+    padding-top: 150%;
+    overflow: hidden;
+}
+
+.book-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.btn-quick-view,
+.btn-add-to-cart {
+    display: none;
+}
+
+.book-item:hover .btn-quick-view,
+.book-item:hover .btn-add-to-cart {
+    display: block;
+}
+
+.btn-quick-view {
+    margin-bottom: 10px;
+    margin-top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-to-cart {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-quick-view:hover,
+.btn-add-to-cart:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.book-title {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--heading-color);
+}
+
+.book-rating {
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #ffd700;
+}
+
+.book-price {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Notification */
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .books-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .books-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .books-container {
+        grid-template-columns: 1fr;
+    }
+
+    .books-header-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

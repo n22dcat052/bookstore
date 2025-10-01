@@ -1,0 +1,120 @@
+/* Contact Page Styles */
+
+/* Contact Section Layout */
+.contact-section {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Contact Information */
+.contact-info {
+    background-color: #ffffff;
+    padding: 40px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: var(--heading-color);
+}
+
+.info-group {
+    margin-bottom: 30px;
+}
+
+.info-item {
+    margin-bottom: 25px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    background-color: #ffffff;
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.submit-button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    width: auto;
+}
+
+.submit-button:hover {
+    background-color: #63457d;
+}
+
+.form-submit {
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* Style for input placeholders */
+.form-input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+/* Contact Section Layout */
+.contact-section {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+.contact-section .container {
+    max-width: 1200px;
+}
+
+/* Page Header */
+.page-header {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.page-title {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+}
+
+.page-description {
+    font-size: 18px;
+    color: var(--text-color);
+}

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    ports:
+      - "8000:80"
+    volumes:
+      - ./backend:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_USER=root
+      - DB_PASS=bookstore_pass
+      - DB_NAME=bookstore
+
+  db:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=bookstore_pass
+      - MYSQL_DATABASE=bookstore
+    volumes:
+      - ./backend/database.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./backend/database_update.sql:/docker-entrypoint-initdb.d/update1.sql
+      - ./backend/database_update_2.sql:/docker-entrypoint-initdb.d/update2.sql
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

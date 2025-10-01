@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Online Book Shopping</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>Free Shipping on Orders Over $50</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Site Logo -->
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Book Store" onerror="this.style.display='none'">
+                    <h1>Book Store</h1>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="all-books.html">All Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <!-- 1. Choose By Category -->
+        <section class="choose-category-section">
+            <div class="container">
+                <h2 class="section-title" style="text-align:center;">Choose By Category</h2>
+                <div class="choose-category-grid">
+                    <div class="category-block">
+                        <img src="assets/images/categories/religion.jpg" alt="Religion & Spirituality">
+                        <div class="category-label">Religion & Spirituality</div>
+                    </div>
+                    <div class="category-block">
+                        <img src="assets/images/categories/teen.jpg" alt="Teen & Young Adult">
+                        <div class="category-label">Teen & Young Adult</div>
+                    </div>
+                    <div class="category-block">
+                        <img src="assets/images/categories/literature.jpg" alt="Literature & Fiction">
+                        <div class="category-label">Literature & Fiction</div>
+                    </div>
+                    <div class="category-block">
+                        <img src="assets/images/categories/crime.jpg" alt="Crime & Suspense">
+                        <div class="category-label">Crime & Suspense</div>
+                    </div>
+                    <div class="category-block">
+                        <img src="assets/images/categories/biographies.jpg" alt="Biographies & Memoir">
+                        <div class="category-label">Biographies & Memoir</div>
+                    </div>
+                    <div class="category-block">
+                        <img src="assets/images/categories/mystery.jpg" alt="Mystery & Thriller">
+                        <div class="category-label">Mystery & Thriller</div>
+                    </div>
+                </div>
+                <div style="text-align:center; margin-top:24px;">
+                    <a href="all-books.html" class="btn btn-primary" style="background:#f7c873;color:#222;">SEE
+                        ALL CATEGORIES</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Best Seller -->
+        <section class="best-seller-section">
+            <div class="container best-seller-container">
+                <div class="best-seller-image">
+                    <img src="assets/images/books/below-zero.jpg" alt="Below Zero">
+                </div>
+                <div class="best-seller-info">
+                    <span class="best-seller-label">World's Best Seller</span>
+                    <h2 class="best-seller-title">Below Zero</h2>
+                    <p class="best-seller-desc">Sản phẩm bán chạy nhất, được yêu thích bởi các độc giả trên toàn
+                        thế giới với nội dung hấp dẫn và lôi cuốn.</p>
+                    <a href="#" class="btn btn-primary" style="background:#f7c873;color:#222;">BUY NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Author of the Month -->
+        <section class="author-month-section">
+            <div class="container author-month-container">
+                <div class="author-image">
+                    <img src="assets/images/authors/author-month.jpg" alt="Author of the Month">
+                </div>
+                <div class="author-info">
+                    <span class="author-label">Author of the Month</span>
+                    <h2 class="author-name">Melissa Miner</h2>
+                    <p class="author-desc">Năm nay, Melissa Miner xuất sắc giành giải tác giả của tháng với
+                        nhiều tác phẩm nổi bật và được yêu thích.</p>
+                    <a href="#" class="btn btn-primary" style="background:#f7c873;color:#222;">READ MORE</a>
+                </div>
+                <div class="author-books">
+                    <ul>
+                        <li>Cyber Angel <span>$18.50 – $22.00</span></li>
+                        <li>Ark Forging <span>$20.00</span></li>
+                        <li>Kathryn Morris Now You See Me <span>$19.00</span></li>
+                        <li>Mists Algorab <span>$19.99</span></li>
+                        <li>2024 Sanctuary <span>$17.00</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Discover New Book -->
+        <section class="discover-book-section">
+            <div class="container">
+                <div class="discover-book-header" style="text-align:center;">
+                    <h2>Discover Your New Book</h2>
+                    <p>Browse through our popular book categories</p>
+                </div>
+                <div class="discover-books-grid">
+                    <div class="book-card">
+                        <img src="assets/images/books/cyber-angel.jpg" alt="Cyber Angel">
+                        <h3>Cyber Angel</h3>
+                        <span>$18.50</span>
+                    </div>
+                    <div class="book-card">
+                        <img src="assets/images/books/ark-forging.jpg" alt="Ark Forging">
+                        <h3>Ark Forging</h3>
+                        <span>$20.00</span>
+                    </div>
+                    <div class="book-card">
+                        <img src="assets/images/books/2024-sanctuary.jpg" alt="2024 Sanctuary">
+                        <h3>2024 Sanctuary</h3>
+                        <span>$17.00</span>
+                    </div>
+                    <div class="book-card">
+                        <img src="assets/images/books/feugiat-maecenas.jpg" alt="Feugiat Maecenas">
+                        <h3>Feugiat Maecenas</h3>
+                        <span>$14.00</span>
+                    </div>
+                    <div class="book-card">
+                        <img src="assets/images/books/liar-of-dreams.jpg" alt="Liar of Dreams">
+                        <h3>Liar of Dreams</h3>
+                        <span>$20.05</span>
+                    </div>
+                    <div class="book-card">
+                        <img src="assets/images/books/mists-algorab.jpg" alt="Mists Algorab">
+                        <h3>Mists Algorab</h3>
+                        <span>$19.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <p>Inspire young minds</p>
+    </div>
+    </a>
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <!-- Slider Section -->
+    <section class="slider-section" style="background:#f7f0e3;padding:60px 0;">
+        <div class="container">
+            <div class="slider-header" style="display:flex;align-items:center;justify-content:space-between;">
+                <div>
+                    <span style="font-size:18px;font-weight:600;">Latest Books</span>
+                    <h1 style="font-size:48px;margin:16px 0 24px 0;">You're Only One Book Away From a Good Mood
+                    </h1>
+                    <p style="font-size:18px;color:#555;max-width:480px;">Nemo enim ipsam voluptatem quia voluptas sit
+                        aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                        nesciunt.</p>
+                    <a href="all-books.html" class="btn btn-primary" style="margin-top:32px;">DISCOVER NOW</a>
+                </div>
+                <div style="display:flex;align-items:center;gap:24px;">
+                    <button class="slider-btn" id="slider-left"
+                        style="font-size:32px;background:none;border:none;cursor:pointer;">&#60;</button>
+                    <img src="assets/images/default-book.jpg" alt="Book"
+                        style="width:220px;height:320px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+                    <img src="assets/images/default-book.jpg" alt="Book"
+                        style="width:220px;height:320px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+                    <img src="assets/images/default-book.jpg" alt="Book"
+                        style="width:220px;height:320px;border-radius:12px;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
+                    <button class="slider-btn" id="slider-right"
+                        style="font-size:32px;background:none;border:none;cursor:pointer;">&#62;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Grid -->
+    <section class="featured-books-section" style="background:#fff;padding:60px 0;">
+        <div class="container">
+            <h2 style="text-align:center;font-size:32px;margin-bottom:24px;">Discover Your New Book</h2>
+            <div class="featured-books-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;">
+                <div class="book-card">
+                    <img src="assets/images/default-book.jpg" alt="Book">
+                    <h3>Cyber Angel</h3>
+                    <span>$18.50</span>
+                </div>
+                <div class="book-card">
+                    <img src="assets/images/default-book.jpg" alt="Book">
+                    <h3>Ark Forging</h3>
+                    <span>$20.00</span>
+                </div>
+                <div class="book-card">
+                    <img src="assets/images/default-book.jpg" alt="Book">
+                    <h3>2024 Sanctuary</h3>
+                    <span>$17.00</span>
+                </div>
+                <div class="book-card">
+                    <img src="assets/images/default-book.jpg" alt="Book">
+                    <h3>Feugiat Maecenas</h3>
+                    <span>$14.00</span>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:32px;">
+                <a href="all-books.html" class="btn btn-primary">DISCOVER MORE BOOK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose By Category -->
+    <section class="choose-category-section" style="background:#f7f7f7;padding:60px 0;">
+        <div class="container">
+            <h2 class="section-title" style="text-align:center;">Choose By Category</h2>
+            <div class="choose-category-grid"
+                style="display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,180px);gap:24px;margin:32px 0;">
+                <a href="all-books.html?sort=fiction" class="category-block">
+                    <img src="assets/images/default-book.jpg">
+                    <div class="category-label">Fiction</div>
+                </a>
+                <a href="all-books.html?sort=non-fiction" class="category-block">
+                    <img src="assets/images/default-book.jpg">
+                    <div class="category-label">Non-Fiction</div>
+                </a>
+                <a href="all-books.html?sort=children" class="category-block">
+                    <img src="assets/images/default-book.jpg">
+                    <div class="category-label">Children</div>
+                </a>
+                <a href="all-books.html?sort=biographies" class="category-block">
+                    <img src="assets/images/default-book.jpg">
+                    <div class="category-label">Biographies</div>
+                </a>
+                <a href="all-books.html?sort=crime" class="category-block">
+                    <img src="assets/images/default-book.jpg">
+                    <div class="category-label">Crime</div>
+                </a>
+                <a href="all-books.html?sort=mystery" class="category-block">
+                    <img src="assets/images/default-book.jpg">
+                    <div class="category-label">Mystery</div>
+                </a>
+            </div>
+            <div style="text-align:center; margin-top:24px;">
+                <a href="all-books.html" class="btn btn-primary">SEE ALL CATEGORIES</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+                <p>Stay updated with our latest releases and exclusive offers</p>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Footer Widgets -->
+            <div class="footer-widgets">
+                <!-- About Widget -->
+                <div class="footer-widget about-widget">
+                    <h4 class="widget-title">About Store</h4>
+                    <p>We are dedicated to providing the best selection of books at competitive prices, along with
+                        exceptional customer service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Widget -->
+                <div class="footer-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul class="quick-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="all-books.html">All Books</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="footer-widget">
+                    <h4 class="widget-title">Categories</h4>
+                    <ul class="categories-links">
+                        <li><a href="#">Fiction</a></li>
+                        <li><a href="#">Non-Fiction</a></li>
+                        <li><a href="#">Children's Books</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Widget -->
+                <div class="footer-widget">
+                    <h4 class="widget-title">Store Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Book Street, Reading City, 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@bookstore.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright-bar">
+                <p>&copy; 2023 Book Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>

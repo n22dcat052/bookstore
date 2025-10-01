@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Book Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>Free Shipping on Orders Over $50</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Site Logo -->
+            <div class="site-logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Book Store" onerror="this.style.display='none'">
+                    <h1>Book Store</h1>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../all-books.html">All Books</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <a href="../cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="product-container">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="../assets/images/default-book.jpg" alt="Book Cover" id="product-image">
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <nav class="product-breadcrumb">
+                        <a href="../index.html">Home</a> / <a href="../all-books.html">All Books</a> / <span
+                            id="product-title">Book Title</span>
+                    </nav>
+                    <h1 id="product-name">Book Title</h1>
+                    <div class="product-meta">
+                        <div class="product-price" id="product-price">$19.99</div>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(4 reviews)</span>
+                        </div>
+                    </div>
+                    <div class="product-description" id="product-description">
+                        <p>Loading description...</p>
+                    </div>
+                    <div class="product-form">
+                        <div class="quantity-selector">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-meta-info">
+                        <p class="category">Category: <span id="product-category">Loading...</span></p>
+                        <p class="author">Author: <span id="product-author">Loading...</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-headers">
+                    <button class="tab-header active" data-tab="description">Description</button>
+                    <button class="tab-header" data-tab="reviews">Reviews (0)</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-panel active" id="description">
+                        <div class="full-description">
+                            Loading detailed description...
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="reviews">
+                        <div class="reviews-container">
+                            <h3>Reviews</h3>
+                            <div id="reviews-list">
+                                <p>There are no reviews yet.</p>
+                            </div>
+                            <div class="review-form">
+                                <h3>Be the first to review this book</h3>
+                                <p class="review-notes">Your email address will not be published. Required fields are
+                                    marked *</p>
+                                <form id="review-form">
+                                    <div class="form-row">
+                                        <label>Your rating *</label>
+                                        <div class="rating-input">
+                                            <i class="far fa-star" data-rating="1"></i>
+                                            <i class="far fa-star" data-rating="2"></i>
+                                            <i class="far fa-star" data-rating="3"></i>
+                                            <i class="far fa-star" data-rating="4"></i>
+                                            <i class="far fa-star" data-rating="5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="review-text">Your review *</label>
+                                        <textarea id="review-text" required></textarea>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="review-name">Name *</label>
+                                        <input type="text" id="review-name" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <label for="review-email">Email *</label>
+                                        <input type="email" id="review-email" required>
+                                    </div>
+                                    <div class="form-row">
+                                        <label>
+                                            <input type="checkbox" id="save-info">
+                                            Save my name, email, and website in this browser for the next time I
+                                            comment.
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2>Related Products</h2>
+                <div class="products-grid">
+                    <!-- Related products will be loaded dynamically -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>Your trusted source for quality books and exceptional reading experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../all-books.html">All Books</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Book Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/product.js"></script>
+</body>
+
+</html>

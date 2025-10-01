@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ill Catch You - Book Details</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="site-logo">
+                <a href="../index.html">
+                    <img src="../assets/images/logo.png" alt="Book Store">
+                    <h1>Book Store</h1>
+                </a>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../all-books.html">All Books</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="../cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="product-section">
+            <div class="container product-container" style="display:flex;gap:48px;align-items:flex-start;">
+                <div class="product-image">
+                    <img src="../assets/images/default-book.jpg" alt="Ill Catch You"
+                        style="width:320px;height:420px;object-fit:cover;border-radius:12px;">
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">I'll Catch You</h1>
+                    <div class="product-price" style="color:#f7c873;font-size:24px;font-weight:600;">$15.75</div>
+                    <div class="product-desc" style="margin:24px 0;">Một cuốn tiểu thuyết trinh thám hấp dẫn, lôi cuốn
+                        người đọc từ trang đầu tiên.</div>
+                    <a href="../cart.html" class="btn btn-primary">Add to Cart</a>
+                </div>
+            </div>
+        </section>
+        <section class="product-tabs" style="margin-top:48px;">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab('desc')">Description</button>
+                    <button class="tab-btn" onclick="showTab('review')">Reviews (0)</button>
+                </div>
+                <div id="desc-tab" class="tab-content active">
+                    <p>Justo vestibulum risus imperdiet consectetur pretium urna augue etiam risus acc um san volutpat
+                        urna, eu sem per enim, est aliquam laoreet urna fringilla viverra.</p>
+                </div>
+                <div id="review-tab" class="tab-content" style="display:none;">
+                    <p>There are no reviews yet.</p>
+                    <form>
+                        <label>Your rating *</label>
+                        <span>☆☆☆☆☆</span><br>
+                        <label>Your review *</label><br>
+                        <textarea rows="4" style="width:100%;margin-bottom:12px;"></textarea><br>
+                        <label>Name *</label>
+                        <input type="text" style="width:100%;margin-bottom:12px;"><br>
+                        <label>Email *</label>
+                        <input type="email" style="width:100%;margin-bottom:12px;"><br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function showTab(tab) {
+            document.getElementById('desc-tab').style.display = tab === 'desc' ? 'block' : 'none';
+            document.getElementById('review-tab').style.display = tab === 'review' ? 'block' : 'none';
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelector('.tab-btn' + (tab === 'desc' ? ':first-child' : ':nth-child(2)')).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

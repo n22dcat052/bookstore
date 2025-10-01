@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Books - Book Store</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/books.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+</head>
+
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p>Free Shipping on Orders Over $50</p>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
+            <!-- Site Logo -->
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Book Store" onerror="this.style.display='none'">
+                    <h1>Book Store</h1>
+                </a>
+            </div>
+
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-books.html" class="active">All Books</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <!-- Books Header -->
+        <section class="books-header">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>All Books</span>
+                </div>
+                <h1 class="page-title">All Books</h1>
+                <div class="books-header-controls">
+                    <p class="showing-results">Showing all 12 results</p>
+                    <select class="sorting-select">
+                        <option value="default">Default sorting</option>
+                        <option value="popularity">Sort by popularity</option>
+                        <option value="rating">Sort by average rating</option>
+                        <option value="latest">Sort by latest</option>
+                        <option value="price-low">Sort by price: low to high</option>
+                        <option value="price-high">Sort by price: high to low</option>
+                        <option value="fiction">Fiction</option>
+                        <option value="non-fiction">Non-Fiction</option>
+                        <option value="children">Children</option>
+                        <option value="biographies">Biographies</option>
+                        <option value="crime">Crime</option>
+                        <option value="mystery">Mystery</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Grid -->
+        <section class="books-grid">
+            <div class="container">
+                <div class="books-container">
+                    <!-- Book 1 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Cyber Angel</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$18.50</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 2 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">2024 Sanctuary</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$17.50</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 3 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Ark Forging</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$20.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 4 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Feugiat Maecenas</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$14.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 5 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Game of Spades</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$18.50</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 6 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">I'll Catch You</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$15.75</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 7 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Into The Wild</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$20.55</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 8 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Liar of Dreams</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$20.05</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 9 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Mists of Algorab</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$19.99</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 10 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Shadowlands</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$16.50</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 11 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">Tales of Castle Black</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$22.00</div>
+                        </div>
+                    </div>
+
+                    <!-- Book 12 -->
+                    <div class="book-item">
+                        <div class="book-image">
+                            <img src="assets/images/default-book.jpg" alt="Book" class="book-img">
+                        </div>
+                        <div class="book-info">
+                            <a href="#" class="btn-quick-view">Quick View</a>
+                            <h3 class="book-title">The Dark Road</h3>
+                            <div class="book-rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <a href="#" class="btn-add-to-cart">Add to Cart</a>
+                            <div class="book-price">$21.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Footer Widgets -->
+            <div class="footer-widgets">
+                <!-- About Widget -->
+                <div class="footer-widget about-widget">
+                    <h4 class="widget-title">About Store</h4>
+                    <p>We are dedicated to providing the best selection of books at competitive prices, along with
+                        exceptional customer service.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Widget -->
+                <div class="footer-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul class="quick-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="all-books.html">All Books</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="footer-widget">
+                    <h4 class="widget-title">Categories</h4>
+                    <ul class="categories-links">
+                        <li><a href="#">Fiction</a></li>
+                        <li><a href="#">Non-Fiction</a></li>
+                        <li><a href="#">Children's Books</a></li>
+                        <li><a href="#">Bestsellers</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Widget -->
+                <div class="footer-widget">
+                    <h4 class="widget-title">Store Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Book Street, Reading City, 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>(555) 123-4567</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@bookstore.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright-bar">
+                <p>&copy; 2023 Book Store. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/product-handler.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/books.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.btn-add-to-cart').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const bookItem = btn.closest('.book-item');
+                    const title = bookItem.querySelector('.book-title').textContent;
+                    const price = parseFloat(bookItem.querySelector('.book-price').textContent.replace('$', ''));
+                    const img = bookItem.querySelector('img').src;
+                    addToCart({ title, price, img });
+                });
+            });
+            updateCartCount();
+        });
+    </script>
+</body>
+
+</html>

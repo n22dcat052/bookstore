@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Book Store</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-top">
+            <div class="container">
+                <p>Free Shipping on Orders Over $50</p>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Book Store</h1>
+                    </a>
+                </div>
+                <nav class="main-navigation">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-cart">
+                    <a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section class="book-details">
+            <div class="container">
+                <div class="book-details-grid">
+                    <div class="book-image">
+                        <img src="" alt="" id="book-image">
+                    </div>
+                    <div class="book-info">
+                        <nav class="breadcrumb">
+                            <a href="index.html">Home</a> /
+                            <a href="shop.html">Shop</a> /
+                            <span id="book-title-bread"></span>
+                        </nav>
+                        <h2 id="book-title"></h2>
+                        <div class="book-meta">
+                            <span class="author">By <span id="book-author"></span></span>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="rating-count">(4.5/5)</span>
+                            </div>
+                        </div>
+                        <div class="book-price">
+                            <span id="book-price"></span>
+                        </div>
+                        <div class="book-description">
+                            <p id="book-description"></p>
+                        </div>
+                        <div class="book-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn decrease">-</button>
+                                <input type="number" value="1" min="1" max="99" id="quantity">
+                                <button class="quantity-btn increase">+</button>
+                            </div>
+                            <button class="btn btn-primary add-to-cart" id="add-to-cart">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <div class="book-details-meta">
+                            <p><strong>Category:</strong> <span id="book-category"></span></p>
+                            <p><strong>ISBN:</strong> <span id="book-isbn"></span></p>
+                            <p><strong>Pages:</strong> <span id="book-pages"></span></p>
+                            <p><strong>Publisher:</strong> <span id="book-publisher"></span></p>
+                            <p><strong>Language:</strong> <span id="book-language"></span></p>
+                            <p><strong>Dimensions:</strong> <span id="book-dimensions"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-books">
+                    <h3>Related Books</h3>
+                    <div class="books-grid" id="related-books">
+                        <!-- Related books will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Us</h4>
+                    <p>Your one-stop destination for all your reading needs. Discover books that will inspire, educate,
+                        and entertain.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@bookstore.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Book Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/book-details.js"></script>
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>
